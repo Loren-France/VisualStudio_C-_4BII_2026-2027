@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\bin\Debug\net10.0\esRipassoRobotIndustriali.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\bin\Debug\net10.0\esRipassoRobotIndustriali.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\bin\Debug\net10.0\esRipassoRobotIndustriali.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\bin\Debug\net10.0\esRipassoRobotIndustriali.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\bin\Debug\net10.0\esRipassoRobotIndustriali.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\refint\esRipassoRobotIndustriali.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipassoRobotIndustriali.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\ref\esRipassoRobotIndustriali.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRipassoRobotIndustriali\esRipassoRobotIndustriali\obj\Debug\net10.0\esRipass.8186AD6B.Up2Date

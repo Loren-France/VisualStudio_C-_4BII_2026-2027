@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("esRipassoRobotIndustriali")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db60d2b304e70e90b5ab26b15416242627ac611e")]
 [assembly: System.Reflection.AssemblyProductAttribute("esRipassoRobotIndustriali")]
 [assembly: System.Reflection.AssemblyTitleAttribute("esRipassoRobotIndustriali")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
