@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\bin\Debug\net10.0\esCambioSegno.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\bin\Debug\net10.0\esCambioSegno.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\bin\Debug\net10.0\esCambioSegno.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\bin\Debug\net10.0\esCambioSegno.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\bin\Debug\net10.0\esCambioSegno.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\refint\esCambioSegno.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambioSegno.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\ref\esCambioSegno.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esCambioSegno\esCambioSegno\obj\Debug\net10.0\esCambio.4A215C0A.Up2Date
