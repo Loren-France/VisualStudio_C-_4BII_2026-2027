@@ -207,13 +207,15 @@ namespace esRipassoRobot
         {
             int l = lista.Count;
             int mostRecent = 0;
+            bool ordered = false;
 
-            for (int i = 1; i < l; i++)
+            for (int i = 1; i < l && !ordered; i++)
             {
                 Robot key = lista[i];
                 if (key.Year > mostRecent)
                 {
                     mostRecent = key.Year;
+                    ordered = true;
                 }
                 int j = i - 1;
                 while (j >= 0 && lista[j].Year > key.Year)
@@ -242,3 +244,24 @@ namespace esRipassoRobot
         }
     }
 }
+
+/* BUBBLE SORT MIGLIORATO CON BOOLEANO SE ORDINATO
+void scambia(ref int a, ref int b){
+int z;
+z = a;
+a = b;
+b = z;
+}
+void BubbleSort(int[] v, int dim){
+bool ordinato=false;
+int i,j;
+for (j=0; j<dim-1 && !ordinato; j++) {
+ordinato=true;
+for (i=dim-1; i>j; i--)
+if (v[i]<v[i-1]) {
+scambia(ref v[i],ref v[i-1]);
+ordinato=false;
+}
+}
+}
+*/
