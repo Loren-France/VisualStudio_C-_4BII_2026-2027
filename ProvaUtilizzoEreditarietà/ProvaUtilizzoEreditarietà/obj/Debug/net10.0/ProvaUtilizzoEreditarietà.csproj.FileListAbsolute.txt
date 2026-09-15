@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\bin\Debug\net10.0\ProvaUtilizzoEreditarietà.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\bin\Debug\net10.0\ProvaUtilizzoEreditarietà.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\bin\Debug\net10.0\ProvaUtilizzoEreditarietà.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\bin\Debug\net10.0\ProvaUtilizzoEreditarietà.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\bin\Debug\net10.0\ProvaUtilizzoEreditarietà.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\refint\ProvaUtilizzoEreditarietà.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUtilizzoEreditarietà.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ref\ProvaUtilizzoEreditarietà.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\ProvaUtilizzoEreditarietà\ProvaUtilizzoEreditarietà\obj\Debug\net10.0\ProvaUti.5D05C3FF.Up2Date
