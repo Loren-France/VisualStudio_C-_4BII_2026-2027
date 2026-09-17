@@ -24,12 +24,24 @@ namespace esPersona
             this.Cognome = Cognome;
         }
 
-        public string Print()
+        public virtual string Print()
         {
             return $"Codice Fiscale: {CodiceFiscale}, Nome: {Nome}, Cognome: {Cognome}";
         }
 
-        public string FiscalCode { get; set; } // Questo è l'equivalente di mettere "get { return CodiceFiscale; } set { CodiceFiscale = value; }" dato che il compilatore crea il ritorno corretto
+        public string FiscalCode 
+        { 
+            get; 
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Il codice fiscale non può essere vuoto o nullo.");
+                }
+                CodiceFiscale = value;
+            } 
+        
+        } // Questo è l'equivalente di mettere "get { return CodiceFiscale; } set { CodiceFiscale = value; }" dato che il compilatore crea il ritorno corretto
         public string Name { get; set; } //get { return Nome; } set { Nome = value; }
         public string Surname { get; set; } // get { return Cognome; } set { Cognome = value; }
     }
@@ -45,16 +57,13 @@ namespace esPersona
             Università = "";
         }
 
-        public Studente(int Matricola, string Università) : base()
+        public Studente(string CodiceFiscale, string Nome, string Cognome, int Matricola, string Università) : base(CodiceFiscale, Nome, Cognome)
         {
-            this.CodiceFiscale = CodiceFiscale;
-            this.Nome = Nome;
-            this.Cognome = Cognome;
             this.Matricola = Matricola;
             this.Università = Università;
         }
 
-        public string Print ()
+        public override string Print ()
         {
             return base.Print() + $", Matricola: {Matricola}, Università: {Università}";
         }
@@ -75,16 +84,13 @@ namespace esPersona
             Salario = 0;
         }   
 
-        public Docente (string Materia, double Salario) : base ()
+        public Docente (string CodiceFiscale, string Nome, string Cognome, string Materia, double Salario) : base (CodiceFiscale, Nome, Cognome)
         {
-            this.CodiceFiscale = CodiceFiscale;
-            this.Nome = Nome;
-            this.Cognome = Cognome;
             this.Materia = Materia;
             this.Salario = Salario;
         }
 
-        public string Print()
+        public override string Print()
         {
             return base.Print() + $", Materia: {Materia}, Salario: {Salario}";
         }
