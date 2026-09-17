@@ -8,17 +8,17 @@ namespace esPersona
     internal class ElencoPersone
     {
         private List<Persona> Persone;
-        private int MAX;
+        private int max;
 
-        public ElencoPersone()
+        public ElencoPersone(int max)
         {
             Persone = new List<Persona>();
-            MAX = 20;
+            this.max = max;
         }
 
         public void Aggiungi(Persona p)
         {
-            if (Persone.Count >= 20)
+            if (Persone.Count >= max)
             {
                 return;
             }
@@ -33,7 +33,7 @@ namespace esPersona
             string builder = "";
             foreach (Persona p in Persone)
             {
-                builder += p.Print() + "/r/n";
+                builder += p.Print() + Environment.NewLine;
             }
             return builder;
         }
@@ -58,9 +58,10 @@ namespace esPersona
             {
                 if (p is Docente d && d.Salary > soglia) // (p is Docente && ((Docente)p).Salary > soglia), al posto di questo che va cmq bene , uso uno pseudo operatore AS
                 {
-                    builder += p.Print() + "/r/n";
+                    builder += p.Print() + Environment.NewLine;
                 }
             }
+
             return builder;
         }
 
@@ -71,15 +72,15 @@ namespace esPersona
             {
                 if (p is Studente)
                 {
-                    builder += "Studente: " + p.Print() + "/r/n";
+                    builder += "Studente: " + p.Print() + Environment.NewLine;
                 }
                 else if (p is Docente)
                 {
-                    builder += "Docente: " + p.Print() + "/r/n";
+                    builder += "Docente: " + p.Print() + Environment.NewLine;
                 }
                 else
                 {
-                    builder += "Persona: " + p.Print() + "/r/n";
+                    builder += "Persona: " + p.Print() + Environment.NewLine;
                 }
             }
             return builder;

@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\bin\Debug\net10.0\esPersona.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\bin\Debug\net10.0\esPersona.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\bin\Debug\net10.0\esPersona.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\bin\Debug\net10.0\esPersona.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\bin\Debug\net10.0\esPersona.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\refint\esPersona.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\ref\esPersona.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPersona\esPersona\obj\Debug\net10.0\esPersona.csproj.Up2Date

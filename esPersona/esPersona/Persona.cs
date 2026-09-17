@@ -29,21 +29,44 @@ namespace esPersona
             return $"Codice Fiscale: {CodiceFiscale}, Nome: {Nome}, Cognome: {Cognome}";
         }
 
-        public string FiscalCode 
-        { 
-            get; 
+        public string FiscalCode
+        {
+            get { return CodiceFiscale; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value) || value.Length != 16)
+                {
+                    throw new Exception("Codice fiscale non valido.");
+                }
+                CodiceFiscale = value;
+            }
+        }
+
+        public string Name
+        {
+            get { return Nome; }
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Il codice fiscale non può essere vuoto o nullo.");
+                    throw new Exception("Nome non valido.");
                 }
-                CodiceFiscale = value;
-            } 
-        
-        } // Questo è l'equivalente di mettere "get { return CodiceFiscale; } set { CodiceFiscale = value; }" dato che il compilatore crea il ritorno corretto
-        public string Name { get; set; } //get { return Nome; } set { Nome = value; }
-        public string Surname { get; set; } // get { return Cognome; } set { Cognome = value; }
+                Nome = value;
+            }
+        }
+
+        public string Surname
+        {
+            get { return Cognome; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Cognome non valido.");
+                }
+                Cognome = value;
+            }
+        }
     }
 
     internal class Studente : Persona
@@ -68,8 +91,33 @@ namespace esPersona
             return base.Print() + $", Matricola: {Matricola}, Università: {Università}";
         }
 
-        public int Number { get; set; } // get { return Matricola; } set { Matricola = value; }
-        public string University { get; set; } // get { return Unviersità; } set { Università = value; }
+        public int Number
+        {
+            get { return Matricola; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Matricola non può essere negativa.");
+                }
+
+                Matricola = value;
+            }
+        }
+
+        public string University
+        {
+            get { return Università; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Università non valida.");
+                }
+
+                Università = value;
+            }
+        }
 
     }
 
@@ -95,7 +143,30 @@ namespace esPersona
             return base.Print() + $", Materia: {Materia}, Salario: {Salario}";
         }
 
-        public string Subject { get; set; } // get { return Materia; } set { Materia = value; }
-        public double Salary { get; set; } // get { return Salario; } set { Salario = value; }
+        public string Subject
+        {
+            get { return Materia; }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new Exception("Materia non valida.");
+                }
+                Materia = value;
+            }
+        }
+
+        public double Salary
+        {
+            get { return Salario; }
+            set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Salario non può essere negativo.");
+                }
+                Salario = value;
+            }
+        }
     }
 }
