@@ -13,4 +13,3 @@ C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFonta
 C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.pdb
 C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.genruntimeconfig.cache
 C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\ref\esFontana.dll
-C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.csproj.Up2Date

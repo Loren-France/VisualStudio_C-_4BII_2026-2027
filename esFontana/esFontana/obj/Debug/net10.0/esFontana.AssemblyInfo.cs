@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("esFontana")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d55b3ed59c13cbb65dfaaa24d3b361387bd95c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c7609c96fdd7d2949eba1b6a645fed1e262e481")]
 [assembly: System.Reflection.AssemblyProductAttribute("esFontana")]
 [assembly: System.Reflection.AssemblyTitleAttribute("esFontana")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

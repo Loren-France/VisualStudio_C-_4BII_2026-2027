@@ -22,7 +22,7 @@
 
                 Console.WriteLine("Inserisci il numero dell'azione da eseguire: ");
             }
-            while (!int.TryParse(Console.ReadLine(), out action) || action < 1 || action > 5);
+            while (!int.TryParse(Console.ReadLine(), out action) || action < 1 || action > 7);
 
             switch (action)
             {
@@ -134,14 +134,7 @@
             }
             while (string.IsNullOrEmpty(città) || string.IsNullOrWhiteSpace(città));
 
-            do
-            {
-                Console.WriteLine("Inserisci il nome della piazza: ");
-                nomePiazza = Console.ReadLine();
-            }
-            while (string.IsNullOrEmpty(nomePiazza) || string.IsNullOrWhiteSpace(nomePiazza));
-
-            CPiazza nuova = new CPiazza(città, autore, cAcqua, stato, diametro, città, nomePiazza);
+            CPiazza nuova = new CPiazza(nome, autore, cAcqua, stato, diametro, città, nomePiazza);
 
             fontane.Add(nuova);
 
@@ -166,7 +159,7 @@
         static void ModificaPiazza()
         {
             string nomePiazza;
-            CPiazza piazzaDaModificare = null;
+            int indicePiazza = -1;
 
             do
             {
@@ -175,27 +168,34 @@
             }
             while (string.IsNullOrEmpty(nomePiazza) || string.IsNullOrWhiteSpace(nomePiazza));
 
-            foreach (var piazza in fontane)
+            for (int i = 0; i < fontane.Count; i++)
             {
-                if (piazza is CPiazza cp && cp.Name == nomePiazza)
+                if (fontane[i] is CPiazza cp && cp.Name == nomePiazza)
                 {
                     Console.WriteLine("Piazza trovata. Creare la nuova piazza con cui modificare la piazza esistente: ");
-                    piazzaDaModificare = cp;
-                    fontane.Remove(piazzaDaModificare);
-
+                    indicePiazza = i;
                     break;
                 }
             }
 
-            if (piazzaDaModificare == null)
+            if (indicePiazza == -1)
             {
                 Console.WriteLine("Piazza non trovata.");
                 return;
             }
+
+            CFontana nuovaPiazza = CreaPiazza(false);
+            if (nuovaPiazza is CPiazza cpNuova)
+            {
+                fontane.Remove(cpNuova);
+                fontane[indicePiazza] = cpNuova;
+                Console.WriteLine("Piazza modificata con successo!");
+            }
             else
             {
-                CreaPiazza(false);
+                Console.WriteLine("Errore: la creazione della nuova piazza non ha restituito una CPiazza.");
             }
+
             return;
         }
 
