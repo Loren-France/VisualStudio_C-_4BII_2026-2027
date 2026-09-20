@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\bin\Debug\net10.0\esFontana.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\bin\Debug\net10.0\esFontana.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\bin\Debug\net10.0\esFontana.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\bin\Debug\net10.0\esFontana.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\bin\Debug\net10.0\esFontana.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\refint\esFontana.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\ref\esFontana.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFontana\esFontana\obj\Debug\net10.0\esFontana.csproj.Up2Date
