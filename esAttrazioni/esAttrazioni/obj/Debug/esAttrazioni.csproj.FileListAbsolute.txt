@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\bin\Debug\esAttrazioni.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\bin\Debug\esAttrazioni.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\bin\Debug\esAttrazioni.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\obj\Debug\esAttrazioni.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\obj\Debug\esAttrazioni.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\obj\Debug\esAttrazioni.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esAttrazioni\esAttrazioni\obj\Debug\esAttrazioni.pdb
