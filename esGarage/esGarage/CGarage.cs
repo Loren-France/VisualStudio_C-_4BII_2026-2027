@@ -19,6 +19,14 @@ namespace esGarage
             }
         }
 
+        public CVeicolo[] Veicoli
+        {
+            get
+            {
+                return veicoli;
+            }
+        }
+
         public void AggiungiVeicolo(CVeicolo veicolo)
         {
             if (numeroVeicoli < veicoli.Length)
@@ -28,43 +36,33 @@ namespace esGarage
             }
             else
             {
-                Console.WriteLine("Garage pieno!");
+                return;
             }
         }
 
         public void EstraiVeicolo(int indice)
         {
-            if (indice >= 0 && indice < numeroVeicoli)
+            if (indice >= 0 && indice <= numeroVeicoli)
             {
-                veicoli[indice] = null;
-                for (int i = indice; i < numeroVeicoli - 1; i++)
-                {
-                    veicoli[i] = veicoli[i + 1];
-                }
-                veicoli[numeroVeicoli - 1] = null;
-                numeroVeicoli--;
+                veicoli[indice - 1] = null;
             }
             else
             {
-                Console.WriteLine("Indice non valido!");
+                return;
             }
         }
 
-        public string StampaVeicoli()
-        {
-            string builder = "";
+        //public string StampaVeicoli()
+        //{
+        //    string builder = "";
 
-            for (int i = 0; i < numeroVeicoli; i++)
-            {
-                builder += veicoli[i].InfoVeicolo() + "\n";
-            }
+        //    for (int i = 0; i < numeroVeicoli; i++)
+        //    {
+        //        builder += veicoli[i].InfoVeicolo() + "\n";
+        //    }
 
-            return builder;
-        }
+        //    return builder;
+        //}
 
-    }
-
-    public class Class1
-    {
     }
 }

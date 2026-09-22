@@ -1,0 +1,10 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\bin\Debug\esGarage.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\bin\Debug\esGarage.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\bin\Debug\esGarage.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.Form1.resources
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.Properties.Resources.resources
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.csproj.GenerateResource.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGarage\esGarage\obj\Debug\esGarage.pdb

@@ -8,16 +8,16 @@ namespace esGarage
 {
     internal class CFurgone : CVeicolo
     {
-        private int capacità;
+        private int capacita;
 
-        public CFurgone(string marca, int anno, int cilindrata, int capacità) : base(marca, anno, cilindrata)
+        public CFurgone(string marca, int anno, int cilindrata, int capacita) : base(marca, anno, cilindrata)
         {
-            this.capacità = capacità;
+            this.capacita = capacita;
         }
 
         public override string InfoVeicolo()
         {
-            return base.InfoVeicolo() + $", Capacità: {capacità} kg";
+            return base.InfoVeicolo() + $", Capacità: {capacita} kg";
         }
 
     }

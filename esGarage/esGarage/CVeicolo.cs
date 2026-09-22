@@ -9,7 +9,8 @@ namespace esGarage
 {
     internal class CVeicolo
     {
-        protected static int id;
+        protected static int counter = 0;
+        protected int id;
         protected string marca;
         protected int anno, cilindrata;
 
@@ -18,7 +19,7 @@ namespace esGarage
             this.marca = marca;
             this.anno = anno;
             this.cilindrata = cilindrata;
-            id++;
+            this.id = ++counter;
         }
 
         public int Identifier
@@ -28,6 +29,7 @@ namespace esGarage
                 return id;
             }
         }
+
         public virtual string InfoVeicolo()
         {
             return $"ID: {id}, Marca: {marca}, Anno: {anno}, Cilindrata: {cilindrata}";
