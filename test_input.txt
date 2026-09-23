@@ -1,0 +1,19 @@
+Mario
+Rossi
+y
+1234567890123
+Articolo Test 1
+100
+2025
+2025
+Articolo Test 2
+200
+2026
+1234567890124
+Articolo Non Alim 1
+50
+plastica
+1234567890125
+Articolo Non Alim 2
+75
+carta

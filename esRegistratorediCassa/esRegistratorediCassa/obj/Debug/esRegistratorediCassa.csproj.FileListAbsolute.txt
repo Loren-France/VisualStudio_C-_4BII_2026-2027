@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\bin\Debug\esRegistratorediCassa.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\bin\Debug\esRegistratorediCassa.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\bin\Debug\esRegistratorediCassa.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\obj\Debug\esRegistratorediCassa.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\obj\Debug\esRegistratorediCassa.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\obj\Debug\esRegistratorediCassa.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esRegistratorediCassa\esRegistratorediCassa\obj\Debug\esRegistratorediCassa.pdb
