@@ -8,9 +8,9 @@ namespace esRegistratorediCassa
 {
     internal class CClienti
     {
+        private List<CArticolo> articoliAcquistati;
         private bool tesseraFedeltà;
         private string nome, cognome;
-        private List<CArticolo> articoliAcquistati;
         private int totaleSpesa;
 
         public CClienti(string nome, string cognome, bool tesseraFedeltà)

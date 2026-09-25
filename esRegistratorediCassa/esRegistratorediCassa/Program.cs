@@ -10,10 +10,12 @@ namespace esRegistratorediCassa
     {
         static void Main(string[] args)
         {
-            string nome, cognome;
-            bool tesseraFedelta;
+            CRegistratore registratore = new CRegistratore();
 
             Console.WriteLine("PROGRAMMA DEL REGISTRATORE DI CASSA");
+
+            string nome, cognome;
+            bool tesseraFedelta;
 
             do
             {
@@ -45,7 +47,8 @@ namespace esRegistratorediCassa
 
             Console.WriteLine($"Creazione cliente...");
 
-            CClienti cliente = new CClienti("Mario", "Rossi", true);
+            CClienti cliente = new CClienti(nome, cognome, tesseraFedelta);
+            registratore.EmettiScontrino();
 
             Console.WriteLine("Aggiungi 3 articoli alimentari:");
 
@@ -75,6 +78,7 @@ namespace esRegistratorediCassa
                 }
 
                 cliente.AggiungiArticolo(articolo);
+                registratore.RichiamoAggiunta(articolo);
             }
 
             Console.WriteLine("Aggiungi 2 articoli non alimentari: ");
@@ -109,6 +113,7 @@ namespace esRegistratorediCassa
                 }
 
                 cliente.AggiungiArticolo(articolo);
+                registratore.RichiamoAggiunta(articolo);
             }
 
             Console.WriteLine(cliente.StampaScontrino());
@@ -119,7 +124,7 @@ namespace esRegistratorediCassa
             {
                 do
                 {
-                    Console.WriteLine("Inserisci il codice a barre dell'articolo:");
+                    Console.WriteLine("Inserisci il codice a barre dell'articolo (Inserire 0 per continuare):");
                 }
                 while (!long.TryParse(Console.ReadLine(), out barcode) || barcode != 0 && (barcode < 0 || barcode.ToString().Length != 13));
 
@@ -137,6 +142,30 @@ namespace esRegistratorediCassa
                 }
             }
 
+            int azione = 0;
+            do
+            {
+                Console.WriteLine("Scegli l'azione da eseguire: 1) Rimuovi scontrino 2) Stampa scontrini 3) Esci");
+            }
+            while (!int.TryParse(Console.ReadLine(), out azione) || azione < 1 || azione > 3);
+
+            switch (azione)
+            {
+                case 1:
+                    registratore.CancellaScontrino();
+                    Console.WriteLine("L'ultimo scontrino è stato rimosso.");
+                    break;
+                case 2:
+                    Console.WriteLine("Elenco degli scontrini emessi:");
+                    Console.WriteLine(registratore.ListScontrini());
+                    break;
+                case 3:
+                    Console.WriteLine("Uscita dal programma...");
+                    break;
+                default:
+                    Console.WriteLine("Azione non valida.");
+                    break;
+            }
         }
 
         static void InitializeArticolo(out long codiceBarre, out string descrizione, out int prezzo)
