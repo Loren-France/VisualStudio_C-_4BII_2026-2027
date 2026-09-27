@@ -15,9 +15,17 @@ namespace esRegistratorediCassa
 
         public CScontrino(int numero)
         {
-            this.totale = totale;
+            this.totale = 0;
             this.data = DateTime.Now;
             this.numero = numero;
+            this.articoliAcquistati = new List<CArticolo>();
+        }
+
+        public CScontrino(int numero, DateTime data)
+        {
+            this.numero = numero;
+            this.data = data;
+            this.totale = 0;
             this.articoliAcquistati = new List<CArticolo>();
         }
 

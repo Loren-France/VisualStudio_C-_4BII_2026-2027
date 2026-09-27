@@ -131,6 +131,8 @@ namespace esRegistratorediCassa
                 clienti.Add(cliente);
             }
 
+            registratore.Sort();
+
             Console.WriteLine("\nResoconto dei clienti: \n");
 
             foreach (CClienti cliente in clienti)
@@ -171,7 +173,7 @@ namespace esRegistratorediCassa
             {
                 do
                 {
-                    Console.WriteLine("Scegli l'azione da eseguire: 1) Rimuovi scontrino 2) Stampa scontrini 3) Esci");
+                    Console.WriteLine("Scegli l'azione da eseguire: 1) Rimuovi scontrino 2) Stampa scontrini della giornata 3) Stampa scontrini del mese 4) Stampa scontrini dell'anno 5) Esci");
                 }
                 while (!int.TryParse(Console.ReadLine(), out azione) || azione < 1 || azione > 3);
 
@@ -182,10 +184,18 @@ namespace esRegistratorediCassa
                         Console.WriteLine("L'ultimo scontrino è stato rimosso.");
                         break;
                     case 2:
-                        Console.WriteLine("Elenco degli scontrini emessi:");
-                        Console.WriteLine(registratore.ListScontrini());
+                        Console.WriteLine("Elenco degli scontrini emessi della giornata:");
+                        Console.WriteLine(registratore.ListScontriniGionaliera());
                         break;
                     case 3:
+                        Console.WriteLine("Elenco degli scontrini emessi del mese:");
+                        Console.WriteLine(registratore.ListScontriniMensile());
+                        break;
+                    case 4:
+                        Console.WriteLine("Elenco degli scontrini emessi dell'anno:");
+                        Console.WriteLine(registratore.ListScontriniAnnuale());
+                        break;
+                    case 5:
                         Console.WriteLine("Uscita dal programma...");
                         break;
                     default:

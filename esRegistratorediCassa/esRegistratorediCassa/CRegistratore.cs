@@ -54,13 +54,44 @@ namespace esRegistratorediCassa
             scontrini[scontrini.Count - 1].AggiungiArticolo(articolo);
         }
 
-        public string ListScontrini()
+        public string ListScontriniGionaliera()
         {
             string builder = "";
 
             foreach (CScontrino scontrino in scontrini)
             {
-                builder += scontrino.Stampa() + "\n";
+                if (scontrino.Data == DateTime.Today)
+                {
+                    builder += scontrino.Stampa() + "\n";
+                }
+            }
+            return builder;
+        }
+
+        public string ListScontriniMensile()
+        {
+            string builder = "";
+
+            foreach (CScontrino scontrino in scontrini)
+            {
+                if (scontrino.Data.Month == DateTime.Now.Month && scontrino.Data.Year == DateTime.Now.Year)
+                {
+                    builder += scontrino.Stampa() + "\n";
+                }
+            }
+            return builder;
+        }
+
+        public string ListScontriniAnnuale(int anno)
+        {
+            string builder = "";
+
+            foreach (CScontrino scontrino in scontrini)
+            {
+                if (scontrino.Data.Year == DateTime.Now.Year)
+                {
+                    builder += scontrino.Stampa() + "\n";
+                }
             }
             return builder;
         }
