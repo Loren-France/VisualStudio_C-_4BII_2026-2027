@@ -82,7 +82,7 @@ namespace esRegistratorediCassa
             return builder;
         }
 
-        public string ListScontriniAnnuale(int anno)
+        public string ListScontriniAnnuale()
         {
             string builder = "";
 
