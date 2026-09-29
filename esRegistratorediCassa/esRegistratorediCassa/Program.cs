@@ -204,7 +204,7 @@ namespace esRegistratorediCassa
                 }
             }
         }
-
+        
         static void InitializeArticolo(out long codiceBarre, out string descrizione, out int prezzo)
         {
             do
