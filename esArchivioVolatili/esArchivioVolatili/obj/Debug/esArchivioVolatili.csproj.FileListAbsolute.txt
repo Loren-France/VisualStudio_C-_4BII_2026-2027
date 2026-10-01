@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\bin\Debug\esArchivioVolatili.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\bin\Debug\esArchivioVolatili.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\bin\Debug\esArchivioVolatili.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\obj\Debug\esArchivioVolatili.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\obj\Debug\esArchivioVolatili.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\obj\Debug\esArchivioVolatili.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esArchivioVolatili\esArchivioVolatili\obj\Debug\esArchivioVolatili.pdb

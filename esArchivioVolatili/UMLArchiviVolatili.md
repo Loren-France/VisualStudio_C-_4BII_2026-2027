@@ -23,6 +23,7 @@ classDiagram
         - note : string
 
         + CAvvistamento(data:DateTime, luogo:string, note:string) : base()
+        + StampaAvvistamento() string
     }
 
     class CRapace {
