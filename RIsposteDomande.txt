@@ -1,0 +1,19 @@
+Risposte Domande sulla scheda di lavoro
+
+1. Come posso creare un elenco unico di dispositivi per accenderli tutti insieme?
+	- Non posso creare un elenco unico come un array o una lista visto che ho 2 classi differenti e non è possibile dichiarare un array o lista di 2 tipi differenti
+
+2. Quali proprietà sono comuni a tutti i dispositivi smart?
+	- Le proprietà comuni a tutti i dispositivi smart sono: Nome, Stanza e IsAcceso
+
+3. Quali comportamenti (metodi) sono uguali per tutti?
+	- I metodi comuni a tutti i dispositivi smart sono: Accendi(), Spegni(), MostraDettagli()
+
+4. Come posso creare un elenco unico di dispositivi per accenderli tutti insieme?
+	- Sì, ora che ho una classe astratta posso creare una lista di dispositivi smart astratti a cui andrò ad aggiungere tutti i dispositivi smart che voglio accendere insieme
+
+5. Cosa guadagni usando un’interfaccia in questo scenario?
+	- Con un'interfaccia posso fare una nuova lista di dispositivi smart a cui posso aggiungere tutti i dispositivi smart che voglio accendere insieme, anche se appartengono a classi differenti
+
+6. Come si modifica il Main()?
+	- Il Main() si modifica per utilizzare la lista di dispositivi di tipo ISwitchable per fare correttamente la stampa di tutte le infomrzioni di tutti i dispositivi creati e accenderli tutti insieme

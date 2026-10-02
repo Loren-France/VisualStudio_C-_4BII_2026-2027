@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\bin\Debug\esSchedadiLavoro.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\bin\Debug\esSchedadiLavoro.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\bin\Debug\esSchedadiLavoro.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\obj\Debug\esSchedadiLavoro.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\obj\Debug\esSchedadiLavoro.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\obj\Debug\esSchedadiLavoro.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esSchedadiLavoro\esSchedadiLavoro\obj\Debug\esSchedadiLavoro.pdb
