@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace esSchedadiLavoro
 {
-    internal class CAllarme : ISwitchable
+    internal class CAllarme : CDispositivoSmart, ISwitchable
     {
-
         public bool IsAcceso { get; private set; }
-        public CAllarme()
+        public CAllarme() : base()
         {
             IsAcceso = false;
         }
+
         public void Accendi()
         {
             IsAcceso = true;
@@ -22,7 +22,7 @@ namespace esSchedadiLavoro
         {
             IsAcceso = false;
         }
-        public string MostraDettagli()
+        public override string MostraDettagli()
         {
             return $"Allarme: Stato: {(IsAcceso ? "Acceso" : "Spento")}";
         }

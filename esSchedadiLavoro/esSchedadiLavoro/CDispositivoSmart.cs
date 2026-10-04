@@ -13,6 +13,11 @@ namespace esSchedadiLavoro
 
         public bool IsAcceso { get; protected set; }
 
+        public CDispositivoSmart()
+        {
+            IsAcceso = false;
+        }
+
         public CDispositivoSmart(string nome, string stanza)
         {
             Nome = nome;
