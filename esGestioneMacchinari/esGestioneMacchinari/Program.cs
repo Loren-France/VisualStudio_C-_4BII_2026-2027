@@ -36,7 +36,7 @@ namespace esGestioneMacchinari
 
             int action = 0;
 
-            while (action != 8)
+            while (action != 10)
             {
                 Console.WriteLine("\nSeleziona un'azione: \n");
                 Console.WriteLine("1. Visualizza macchinari presenti nel parcheggio");
