@@ -57,6 +57,13 @@ classDiagram
         LiberaCantiere() : void;
     }
 
+    class CCantiere{
+        + Nome: string
+
+        +AggiuntaMacchina(): void
+        +LiberaMacchina(): void
+    }
+
     %% EREDITARIETÀ
     IAssegnabile <|-- CMacchinariPesanti
     CMacchinariPesanti <|-- CRuspe
@@ -65,4 +72,5 @@ classDiagram
 
     %% Program usa le classi ma non le possiede
     Program --> CMacchinariPesanti
+    Program --> CCantiere
 ```
