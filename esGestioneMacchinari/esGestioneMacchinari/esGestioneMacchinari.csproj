@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CBetoniere.cs" />
+    <Compile Include="CCantiere.cs" />
+    <Compile Include="CGru.cs" />
+    <Compile Include="CMacchinariPesanti.cs" />
+    <Compile Include="CRuspe.cs" />
+    <Compile Include="IAssegnabile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

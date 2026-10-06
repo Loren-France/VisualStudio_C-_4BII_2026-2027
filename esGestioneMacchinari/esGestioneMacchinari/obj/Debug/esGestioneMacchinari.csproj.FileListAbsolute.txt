@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\bin\Debug\esGestioneMacchinari.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\bin\Debug\esGestioneMacchinari.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\bin\Debug\esGestioneMacchinari.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\obj\Debug\esGestioneMacchinari.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\obj\Debug\esGestioneMacchinari.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\obj\Debug\esGestioneMacchinari.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esGestioneMacchinari\esGestioneMacchinari\obj\Debug\esGestioneMacchinari.pdb
