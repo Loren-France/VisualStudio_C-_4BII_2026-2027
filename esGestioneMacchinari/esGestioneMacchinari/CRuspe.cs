@@ -23,7 +23,7 @@
         public override string Descrizione()
         {
             string statement = this.StatoMacchinario ? "libero" : "Occupato";
-            return $"Ruspe - {this.Modello} - Anno: {this.AnnoProduzione} - Targa: {this.Targa} - Stato: {statement} - Dimensione benna: {this.Tipo}";
+            return $"Ruspe - {this.Modello} - Anno: {this.AnnoProduzione} - Targa: {this.Targa} - Stato: {statement} - Dimensione benna: {(int)this.Tipo}";
         }
 
         public void CambioBenna(TipoRuspa nuovoTipo)
