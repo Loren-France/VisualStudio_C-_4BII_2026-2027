@@ -1,90 +1,93 @@
 ```mermaid
 classDiagram
-    %% Lista di Interfacce
-    %% CLASSI PRINCIPALI
     class CAttrazioni {
         <<abstract>>
-        - Stato : bool
-        - CostoRiparazione : double
-        - TempoRiparazione : int
-        + Nome: string
-        + CapienzaMax: int
-
-        + CAttrazioni(string nome, int capacità, double costo)
-        + override ToString() : string
-        + abstract void Costo(CVisitatore)
+        + Nome : string
+        + CapacitaMax : int
+        + IsGuasto : bool
+        + CAttrazioni(...)
+        + Costo() : int
+        + VerificaVisitatore(CVisitatore visitatore) : bool
+        + Vendi(CVisitatore visitatore) : int
+        + Ripara() : string
+        + SegnalaGuasto() : string
+        + ToString() : string
     }
 
     class CGiostraBambini {
-        - MaxEtà: int
-        - Prezzo: int
-
-        + CRuspe (string nome, )
-        + Verifica()
-        + override ToString() : string
+        - EtàMassima : int
+        - Prezzo : int
+        + CGiostraBambini(...)
+        + Costo() : int
+        + VerificaVisitatore(CVisitatore visitatore) : bool
+        + ToString() : string
     }
 
     class CSalaGiochi {
-        - PortataMax: double
-        - AltezzaLavoro: double
-        - Gettoni: int
-
-        + CGru (..., double portata, double altezza) : base(...)
-        + override ToString() : string
+        + GettoniRichiesti : int
+        + PrezzoPerGettone : int
+        + CSalaGiochi(...)
+        + Costo() : int
+        + VerificaVisitatore(CVisitatore visitatore) : bool
+        + UsaPerVisitatore(CVisitatore visitatore) : int
+        + Vendi(CVisitatore visitatore) : int
+        + ToString() : string
     }
 
     class CMontagnaRussa {
-        - MinEtà: int
-        - Prezzo : double
-        - FastPass : double
-
-        + CMontagnaRussa(..., int min) : base(...)
-        + override TOString() : string
-        + Verifica(CVisitatore) : bool
+        - EtàMinima : int
+        - Prezzo : int
+        - FastPass : bool
+        + CMontagnaRussa(...)
+        + Costo() : int
+        + VerificaVisitatore(CVisitatore visitatore) : bool
+        + ToString() : string
     }
 
     class CTorreCaduta {
-        - PesoMax: int
-        - Supplemento: int
-
-        + CTorreCaduta(...) : base (...) ;
-        + override ToString(): string;
-        + override Costo()
+        - PesoMax : int
+        - Supplemento : int
+        - Prezzo : int
+        + CTorreCaduta(...)
+        + Costo() : int
+        + VerificaVisitatore(CVisitatore visitatore) : bool
+        + ToString() : string
     }
 
     class CVisitatore{
-        - FastPass : bool
-        - altezza : int
-        - peso: int
-        - età: int
-
-        +CVisitatore(): void
-        +LiberaMacchina(): void
+        + FastPass : bool
+        + Altezza : int
+        + Peso : int
+        + Età : int
+        + Gettoni : int
+        + CVisitatore(...)
     }
 
     class IFixable {
         <<Interface>>
-        IsGuasto(): bool
-
-        Ripara() : void;
-        SegnalaGuasto() : void;
+        IsGuasto : bool
+        Ripara() : string
+        SegnalaGuasto() : string
     }
 
-    class CChiosco{
-        - Tipicibo: enum
-        
-        + void Ripara()
-        + void SegnalaGuasto() 
+    class CChiosco {
+        - TipoCibo : TipologiaCibi
+        + IsGuasto : bool
+        + CChiosco(...)
+        + Ripara() : string
+        + SegnalaGuasto() : string
+        + ToString() : string
     }
 
-    class CBagno{
-        - NumeroBagni: int
-
-        + void Ripara()
-        + void SegnalaGuasto() 
+    class CBagno {
+        - NumeroBagni : int
+        + IsGuasto : bool
+        + CBagno(...)
+        + Ripara() : string
+        + SegnalaGuasto() : string
+        + ToString() : string
     }
 
-    %% EREDITARIETÀ
     IFixable <|-- CAttrazioni
     IFixable <|-- CChiosco
     IFixable <|-- CBagno
@@ -92,8 +95,4 @@ classDiagram
     CAttrazioni <|-- CMontagnaRussa
     CAttrazioni <|-- CSalaGiochi
     CMontagnaRussa <|-- CTorreCaduta
-
-    %% Program usa le classi ma non le possiede
-    Program --> CAttrazioni
-    Program --> CVisitatore
 ```
