@@ -10,7 +10,7 @@ namespace esFantasilandia
     {
         bool IsGuasto { get; set; }
 
-        void Ripara();
-        void SegnalaGuasto();
+        string Ripara();
+        string SegnalaGuasto();
     }
 }

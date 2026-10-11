@@ -12,7 +12,7 @@ namespace esFantasilandia
         private int EtàMinima, Prezzo;
         private bool FastPass;
 
-        public CMontagnaRussa(string nome, int capacitaMax, bool stato, int tempoRiparazione, double costoRiparazione, int etàMinima, int prezzo, bool fastPass) : base(nome, capacitaMax, stato, tempoRiparazione, costoRiparazione)
+        public CMontagnaRussa(string nome, int capacitaMax, bool stato, int tempoRiparazione, int costoRiparazione, int etàMinima, int prezzo, bool fastPass) : base(nome, capacitaMax, stato, tempoRiparazione, costoRiparazione)
         {
             this.EtàMinima = etàMinima;
             this.Prezzo = prezzo;
@@ -22,6 +22,24 @@ namespace esFantasilandia
         public override string ToString()
         {
             return base.ToString() + $"Età Minima: {EtàMinima}, Prezzo: {Prezzo}, FastPass: {FastPass}";
+        }
+
+        public override int Costo()
+        {
+            if (FastPass)
+            {
+                return this.Prezzo + 4;
+            }
+            return this.Prezzo;
+        }
+
+        public override bool VerificaVisitatore(CVisitatore visitatore)
+        {
+            if (visitatore.Età < this.EtàMinima)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

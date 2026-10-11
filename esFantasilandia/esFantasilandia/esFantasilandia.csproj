@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CAttrazioni.cs" />
+    <Compile Include="CBagno.cs" />
+    <Compile Include="CChiosco.cs" />
     <Compile Include="CGiostraBambini.cs" />
     <Compile Include="CMontagnaRussa.cs" />
     <Compile Include="CSalaGiochi.cs" />

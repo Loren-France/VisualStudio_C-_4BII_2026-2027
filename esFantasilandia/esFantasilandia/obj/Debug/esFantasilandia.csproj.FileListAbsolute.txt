@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\bin\Debug\esFantasilandia.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\bin\Debug\esFantasilandia.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\bin\Debug\esFantasilandia.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\obj\Debug\esFantasilandia.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\obj\Debug\esFantasilandia.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\obj\Debug\esFantasilandia.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esFantasilandia\esFantasilandia\obj\Debug\esFantasilandia.pdb

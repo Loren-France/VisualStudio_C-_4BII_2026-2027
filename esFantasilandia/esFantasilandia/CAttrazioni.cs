@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace esFantasilandia
 {
-    internal class CAttrazioni : IFixable
+    internal abstract class CAttrazioni : IFixable
     {
         public string Nome { get; set; }
         public int CapacitaMax { get; set; }
         private bool Stato;
         private int TempoRiparazione;
-        private double CostoRiparazione;
+        public int CostoRiparazione;
 
-        public CAttrazioni (string nome, int capacitaMax, bool stato, int tempoRiparazione, double costoRiparazione)
+        public CAttrazioni (string nome, int capacitaMax, bool stato, int tempoRiparazione, int costoRiparazione)
         {
             this.Nome = nome;
             this.CapacitaMax = capacitaMax;
@@ -27,6 +27,17 @@ namespace esFantasilandia
         {
             get { return !Stato; }
             set { Stato = !value; }
+        }
+
+        public abstract int Costo();
+        public abstract bool VerificaVisitatore(CVisitatore visitatore);
+        public virtual int Vendi(CVisitatore visitatore)
+        {
+            if (VerificaVisitatore(visitatore))
+            {
+                return Costo();
+            }
+            return 0;
         }
 
         public string Ripara()
@@ -45,6 +56,19 @@ namespace esFantasilandia
             }
 
             return builder;
+        }
+
+        public string SegnalaGuasto()
+        {
+            if (!IsGuasto)
+            {
+                IsGuasto = true;
+                return $"L'attrazione {Nome} è stata segnalata come guasta.";
+            }
+            else
+            {
+                return $"L'attrazione {Nome} è già segnalata come guasta.";
+            }
         }
 
         public override string ToString()
