@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\bin\Debug\esTOrte.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\bin\Debug\esTOrte.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\bin\Debug\esTOrte.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\obj\Debug\esTOrte.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\obj\Debug\esTOrte.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\obj\Debug\esTOrte.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esTOrte\esTOrte\obj\Debug\esTOrte.pdb
