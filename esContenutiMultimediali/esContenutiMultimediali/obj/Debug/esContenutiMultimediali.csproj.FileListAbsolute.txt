@@ -1,0 +1,7 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\bin\Debug\esContenutiMultimediali.exe.config
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\bin\Debug\esContenutiMultimediali.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\bin\Debug\esContenutiMultimediali.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\obj\Debug\esContenutiMultimediali.csproj.AssemblyReference.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\obj\Debug\esContenutiMultimediali.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\obj\Debug\esContenutiMultimediali.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esContenutiMultimediali\esContenutiMultimediali\obj\Debug\esContenutiMultimediali.pdb

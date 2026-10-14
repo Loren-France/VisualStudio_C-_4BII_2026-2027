@@ -42,11 +42,23 @@ namespace esContenutiMultimediali
         public string Darker(int d)
         {
             Luminosità -= d;
+
+            if (Luminosità < 0)
+            {
+                Luminosità = 0;
+            }
+
             return $"Luminosità dell'immagine {this.Nome} diminuita di {d}";
         }
         public string Brighter(int b)
         {
             Luminosità += b;
+
+            if (Luminosità > 10)
+            {
+                Luminosità = 10;
+            }
+
             return $"Luminosità dell'immagine {this.Nome} aumentata di {b}";
         }
         public string Show()

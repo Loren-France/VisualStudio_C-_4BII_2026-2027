@@ -7,7 +7,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace esContenutiMultimediali
 {
-    internal class CFilmato : CElementoMultimediale, IRiproducibile, ILuminosità, IComparable<CFilmato>
+    internal class CFilmato : CElementoMultimediale, IRiproducibile, ILuminosità, IEquatable<CFilmato>
     {
         private int Volume;
         public int Durata { get; set; }
@@ -24,9 +24,9 @@ namespace esContenutiMultimediali
         {
             get
             {
-                if (SelectVolume >= 0 || SelectVolume <= 20)
+                if (Volume >= 0 && Volume <= 20)
                 {
-                    return Luminosità;
+                    return Volume;
                 }
                 else
                 {
@@ -35,7 +35,14 @@ namespace esContenutiMultimediali
             }
             set
             {
-                SelectVolume = value;
+                if (value >= 0 && value <= 20)
+                {
+                    Volume = value;
+                }
+                else
+                {
+                    throw new Exception("Il valore del Volume non rispetta i limiti, il valore deve essere compreso tra 0 e 20.");
+                }
             }
         }
 
@@ -43,7 +50,7 @@ namespace esContenutiMultimediali
         {
             get
             {
-                if (Luminosità >= 0 || Luminosità <= 10)
+                if (Luminosità >= 0 && Luminosità <= 10)
                 {
                     return Luminosità;
                 }
@@ -54,7 +61,14 @@ namespace esContenutiMultimediali
             }
             set
             {
-                Light = value;
+                if (value >= 0 && value <= 10)
+                {
+                    Luminosità = value;
+                }
+                else
+                {
+                    throw new Exception("Il valore di Luminosità non rispetta i limiti, il valore deve essere compreso tra 0 e 10.");
+                }
             }
         }
 
@@ -84,35 +98,60 @@ namespace esContenutiMultimediali
             return builder;
         }
 
-        public int CompareTo(CFilmato f)
+        public bool Equals(CFilmato other)
         {
-            if (f == null) return 1;
+            if (other == null) return false;
 
-            if (this.Durata < f.Durata) return -1;
-            if (this.Durata > f.Durata) return 1;
-
-            return 0;
+            if (this.Nome == other.Nome && this.Volume == other.Volume && this.Durata == other.Durata && this.Luminosità == other.Luminosità)
+            {
+                return true;
+            }
+            return false;
         }
 
         public string Weaker(int w)
         {
             Volume -= w;
+
+            if (Volume < 0)
+            {
+                Volume = 0;
+            }
+
             return $"Il Volume del filmato {this.Nome} è diminuito di {w}";
         }
 
         public string Louder(int l)
         {
-            Volume -= l;
-            return $"Il Volume del filmato {this.Nome} è diminuito di {l}";
+            Volume += l;
+
+            if (Volume > 20)
+            {
+                Volume = 20;
+            }
+
+            return $"Il Volume del filmato {this.Nome} è aumentato di {l}";
         }
         public string Darker(int d)
         {
             Luminosità -= d;
+
+            if (Luminosità < 0)
+            {
+                Luminosità = 0;
+            }
+
             return $"Luminosità del filmato {this.Nome} diminuita di {d}";
         }
         public string Brighter(int b)
         {
             Luminosità += b;
+
+            if (Luminosità > 10)
+            {
+                Luminosità = 10;
+            }
+
             return $"Luminosità del filmato {this.Nome} aumentata di {b}";
         }
     }

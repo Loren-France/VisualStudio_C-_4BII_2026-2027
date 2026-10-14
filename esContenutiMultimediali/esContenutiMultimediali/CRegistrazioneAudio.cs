@@ -45,12 +45,24 @@ namespace esContenutiMultimediali
         public string Weaker (int w)
         {
             Volume -= w;
+
+            if (Volume < 0)
+            {
+                Volume = 0;
+            }
+
             return $"Il Volume della registrazione {this.Nome} è diminuito di {w}";
         }
 
         public string Louder(int l)
         {
             Volume += l;
+
+            if (Volume > 20)
+            {
+                Volume = 20;
+            }
+
             return $"Il Volume della registrazione {this.Nome} è aumentato di {l}";
         }
 

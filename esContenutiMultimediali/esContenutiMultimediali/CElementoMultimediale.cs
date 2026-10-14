@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace esContenutiMultimediali
 {
-    internal abstract class CElementoMultimediale
+    internal abstract class CElementoMultimediale : IComparable<CElementoMultimediale>
     {
         public string Nome {  get; set; }
 
@@ -16,5 +16,10 @@ namespace esContenutiMultimediali
         }
 
         public abstract string ToString();
+
+        public int CompareTo(CElementoMultimediale f)
+        {
+            return this.Nome.CompareTo(f.Nome);
+        }
     }
 }
