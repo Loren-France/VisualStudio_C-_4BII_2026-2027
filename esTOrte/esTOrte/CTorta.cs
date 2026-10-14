@@ -8,12 +8,17 @@ namespace esTOrte
 {
     internal class CTorta : CDolce
     {
-        public CTorta(string nome, int punteggio) : base(nome, punteggio)
+        public string Ingredienti { get; set; }
+        private int NStrati;
+
+        public CTorta(string nome, int punteggio, string ingredienti) : base(nome, punteggio)
         {
+            Ingredienti = ingredienti;
+            NStrati = 1;
         }
         public override string Stampa()
         {
-            return $"Nome: {Nome}, Tipologia: Torta, Punteggio: {Punteggio}";
+            return $"Nome: {Nome}, Tipologia: Torta, Punteggio: {Punteggio}, Ingredienti: {Ingredienti}, Numero strati: {NStrati}";
         }
 
         public void ProvadiSofficienza()
@@ -25,6 +30,20 @@ namespace esTOrte
                 this.Punteggio = 0;
             }
             return;
+        }
+
+        public string AggiungiStrato()
+        {
+            if (NStrati >= 5)
+            {
+                return "Non è possibile abbiungere più di 5 strati";
+            }
+            else
+            {
+                this.NStrati += 1;
+
+                return "Strato aggiunto correttamente";
+            }
         }
     }
 }

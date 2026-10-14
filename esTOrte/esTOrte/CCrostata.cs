@@ -8,12 +8,17 @@ namespace esTOrte
 {
     internal class CCrostata : CDolce
     {
-        public CCrostata(string nome, int punteggio) : base(nome, punteggio)
+        private bool Glassata = false;
+        public int TempoCottura { get; set; }
+
+        public CCrostata(string nome, int punteggio, int tempoCottura, bool glassata) : base(nome, punteggio)
         {
+            TempoCottura = tempoCottura;
+            Glassata = glassata;
         }
         public override string Stampa()
         {
-            return $"Nome: {Nome}, Tipologia: Crostata, Punteggio: {Punteggio}";
+            return $"Nome: {Nome}, Tipologia: Crostata, Punteggio: {Punteggio}, Tempo di cottura: {TempoCottura}, Glassata: {(Glassata ? "Sì" : "No")}";
         }
 
         public void ProvadiCroccantezza()
@@ -25,6 +30,24 @@ namespace esTOrte
                 this.Punteggio = 0;
             }
             return;
+        }
+
+        public string Glassatura()
+        {
+            if (!Glassata)
+            {
+                Glassata = true;
+                this.Punteggio += 2;
+                if (this.Punteggio > 10)
+                {
+                    this.Punteggio = 10;
+                }
+                return "La crostata è stata glassata con successo!";
+            }
+            else
+            {
+                return "La crostata è già glassata!";
+            }
         }
     }
 }

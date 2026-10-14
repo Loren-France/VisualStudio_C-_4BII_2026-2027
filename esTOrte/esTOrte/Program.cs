@@ -14,12 +14,12 @@ namespace esTOrte
             Random r = new Random();
 
             //Creazione di alcune crostate e torte e aggiunta alla lista di dolci
-            CCrostata crostata1 = new CCrostata("Crostata di frutta", 8);
-            CCrostata crostata2 = new CCrostata("Crostata al cioccolato", 9);
-            CCrostata crostata3 = new CCrostata("Crostata alla marmellata", 5);
-            CTorta Torta1 = new CTorta("Torta di mele", 7);
-            CTorta Torta2 = new CTorta("Torta al cioccolato", 8);
-            CTorta Torta3 = new CTorta("Torta alla frutta", 6);
+            CCrostata crostata1 = new CCrostata("Crostata di frutta", r.Next(1, 11), 30, false);
+            CCrostata crostata2 = new CCrostata("Crostata al cioccolato", r.Next(1, 11), 45, false);
+            CCrostata crostata3 = new CCrostata("Crostata alla marmellata", r.Next(1, 11), 25, false);
+            CTorta Torta1 = new CTorta("Torta di mele", r.Next(1, 11), "mele, zucchero, burro");
+            CTorta Torta2 = new CTorta("Torta al cioccolato", r.Next(1, 11), "cioccolato, zucchero, burro");
+            CTorta Torta3 = new CTorta("Torta alla frutta", r.Next(1, 11), "frutta di stagione, zucchero, burro");
 
             ListaDolci.Add(crostata1);
             ListaDolci.Add(crostata2);
@@ -32,7 +32,7 @@ namespace esTOrte
 
             int action = 0;
 
-            while (action != 6)
+            while (action != 8)
             {
                 Console.WriteLine("Scegli un'azione:");
                 Console.WriteLine("1. Visualizza la lista dei dolci e stato");
@@ -40,12 +40,14 @@ namespace esTOrte
                 Console.WriteLine("3. Sottoponi una torta a Prova di sofficienza");
                 Console.WriteLine("4. Sottoponi un dolce casuale alla raffinazione");
                 Console.WriteLine("5. Avvia il Finale di degustazione");
-                Console.WriteLine("6. Esci");
+                Console.WriteLine("6. Glassa una crostata");
+                Console.WriteLine("7. Aggiungi strato ad una torta");
+                Console.WriteLine("8. Esci");
 
                 do
                 {
                     Console.Write("Inserisci il numero dell'azione desiderata: ");
-                } while (!int.TryParse(Console.ReadLine(), out action) || action < 1 || action > 6);
+                } while (!int.TryParse(Console.ReadLine(), out action) || action < 1 || action > 8);
 
                 Console.WriteLine();
 
@@ -90,6 +92,25 @@ namespace esTOrte
                         FinalediDegustazione();
                         break;
                     case 6:
+                        int CrostataDaGlassare = r.Next(0, 4);
+                        if (ListaDolci[CrostataDaGlassare] is CCrostata crostataAGlassare)
+                        {
+                            Console.WriteLine($"Crostata {crostataAGlassare.Nome} sottoposta a glassatura.");
+                            Console.WriteLine(crostataAGlassare.Glassatura());
+                        }
+                        Console.WriteLine();
+                        break;
+                    case 7:
+                        int TortaDaStratificare = r.Next(3, 6);
+                        if (ListaDolci[TortaDaStratificare] is CTorta tortaStratificare)
+                        {
+                            Console.WriteLine($"Torta {tortaStratificare.Nome} sottoposta a stratificazione");
+                            Console.WriteLine(tortaStratificare.AggiungiStrato());
+                        }
+                        // CCrostate crostata = ListaDolci[indice] as CCrostata;
+                        Console.WriteLine();
+                        break;
+                    case 8:
                         Console.WriteLine("Uscita dal programma...");
                         return;
                     default:
