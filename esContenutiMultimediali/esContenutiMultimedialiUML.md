@@ -65,7 +65,7 @@ classDiagram
         +Darker(int mod) string
     }
 
-    Program <|-- CElementoMultimediale
+    Program --> CElementoMultimediale
 
     CElementoMultimediale <|-- CImmagine
     CElementoMultimediale <|-- CRegistrazioneAudio
