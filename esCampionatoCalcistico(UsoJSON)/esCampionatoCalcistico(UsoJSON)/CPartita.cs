@@ -21,5 +21,12 @@ namespace esCampionatoCalcistico_UsoJSON_
             GolOspite = golOspite;
         }
 
+        public override string ToString()
+        {
+            string build = "Squadra di casa: " + string.Join(", ", SquadraCasa) + "\n";
+            build += "Squadra ospite: " + string.Join(", ", SquadraOspite) + "\n";
+            build += $"Risultato: {GolCasa} - {GolOspite}\n";
+            return build;
+        }
     }
 }
