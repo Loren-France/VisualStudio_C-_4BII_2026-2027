@@ -1,0 +1,16 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\bin\Debug\net10.0\esUEFA.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\bin\Debug\net10.0\esUEFA.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\bin\Debug\net10.0\esUEFA.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\bin\Debug\net10.0\esUEFA.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\bin\Debug\net10.0\esUEFA.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\refint\esUEFA.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\ref\esUEFA.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esUEFA\esUEFA\obj\Debug\net10.0\esUEFA.csproj.Up2Date

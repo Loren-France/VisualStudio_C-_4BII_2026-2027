@@ -1,0 +1,42 @@
+[
+  {
+    "Giornata": 1,
+    "SquadraCasa": "Juventus",
+    "SquadraOspite": "Inter",
+    "GolCasa": 5,
+    "GolOspite": 0,
+    "Fase": "Eliminazione"
+  },
+  {
+    "Giornata": 3,
+    "SquadraCasa": "Roma",
+    "SquadraOspite": "Lazio",
+    "GolCasa": 4,
+    "GolOspite": 4,
+    "Fase": "Eliminazione"
+  },
+  {
+    "Giornata": 4,
+    "SquadraCasa": "A",
+    "SquadraOspite": "B",
+    "GolCasa": 9,
+    "GolOspite": 8,
+    "Fase": "Eliminazione"
+  },
+  {
+    "Giornata": 5,
+    "SquadraCasa": "C",
+    "SquadraOspite": "D",
+    "GolCasa": 3,
+    "GolOspite": 4,
+    "Fase": "Girone"
+  },
+  {
+    "Giornata": 6,
+    "SquadraCasa": "E",
+    "SquadraOspite": "F",
+    "GolCasa": 4,
+    "GolOspite": 4,
+    "Fase": "Eliminazione"
+  }
+]

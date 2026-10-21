@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
 using System.IO;
+using System.Xml;
 
 namespace esCampionatoCalcistico_UsoJSON_
 {
@@ -111,7 +112,7 @@ namespace esCampionatoCalcistico_UsoJSON_
             if (File.Exists(fileName))
             {
                 string jsonString = File.ReadAllText(fileName);
-                CPartita partite = JsonSerializer.Deserialize<CPartita>(jsonString); // Ricorda di mettere tipo tra parentesi angolari <CPartita> per specificare il tipo di oggetto da deserializzare
+                CPartita partite = JsonSerializer.Deserialize<CPartita>(jsonString);
                 Console.WriteLine("\nResoconto della partita:");
                 Console.WriteLine(partite.ToString() + "\n");
             }
