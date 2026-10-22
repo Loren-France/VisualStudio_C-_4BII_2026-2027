@@ -16,14 +16,16 @@ namespace esUEFA
         private string squadraOspite;
         private int golCasa;
         private int golOspite;
+        private DateTime? data;
 
-        public CPartita(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite)
+        public CPartita(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite, DateTime? data)
         {
-            Giornata = giornata;
-            SquadraCasa = squadraCasa;
-            SquadraOspite = squadraOspite;
-            GolCasa = golCasa;
-            GolOspite = golOspite;
+            this.Giornata = giornata;
+            this.SquadraCasa = squadraCasa;
+            this.SquadraOspite = squadraOspite;
+            this.GolCasa = golCasa;
+            this.GolOspite = golOspite;
+            this.data = data;
         }
 
         public static string Criterio
@@ -98,6 +100,12 @@ namespace esUEFA
             }
         }
 
+        public DateTime? Data
+        {
+            get { return data; }
+            set { data = value; }
+        }
+
         public abstract string Fase { get; }
 
         public abstract int PuntiPer(string squadra);
@@ -107,6 +115,8 @@ namespace esUEFA
             string build = "Squadra di casa: " + SquadraCasa + "\n";
             build += "Squadra ospite: " + SquadraOspite + "\n";
             build += $"Risultato: {GolCasa} - {GolOspite}\n";
+            if (Data != null)
+                build += $"Data: {Data.Value.ToShortDateString()}\n";
             return build;
         }
 
@@ -199,6 +209,22 @@ namespace esUEFA
                     return 1;
                 else
                     return -1;
+            }
+            else if (criterio == "data")
+            {
+                if (this.Data == null && partita.Data == null)
+                    return 0;
+                else if (this.Data == null)
+                    return 1;
+                else if (partita.Data == null)
+                    return -1;
+                else if (this.Data < partita.Data)
+                    return -1;
+                else if (this.Data > partita.Data)
+                    return 1;
+                else
+                    return 0;
+            
             }
             else
             {

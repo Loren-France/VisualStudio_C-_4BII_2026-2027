@@ -1,42 +1,22 @@
 [
   {
+    "Fase": "Eliminazione",
+    "RigoriCasa": 5,
+    "RigoriOspite": 4,
     "Giornata": 1,
-    "SquadraCasa": "Juventus",
-    "SquadraOspite": "Inter",
-    "GolCasa": 5,
-    "GolOspite": 0,
-    "Fase": "Eliminazione"
-  },
-  {
-    "Giornata": 3,
-    "SquadraCasa": "Roma",
-    "SquadraOspite": "Lazio",
-    "GolCasa": 4,
-    "GolOspite": 4,
-    "Fase": "Eliminazione"
-  },
-  {
-    "Giornata": 4,
     "SquadraCasa": "A",
     "SquadraOspite": "B",
-    "GolCasa": 9,
-    "GolOspite": 8,
-    "Fase": "Eliminazione"
+    "GolCasa": 4,
+    "GolOspite": 4,
+    "Data": "2025-12-06T00:00:00"
   },
   {
-    "Giornata": 5,
+    "Fase": "Girone",
+    "Giornata": 2,
     "SquadraCasa": "C",
     "SquadraOspite": "D",
     "GolCasa": 3,
-    "GolOspite": 4,
-    "Fase": "Girone"
-  },
-  {
-    "Giornata": 6,
-    "SquadraCasa": "E",
-    "SquadraOspite": "F",
-    "GolCasa": 4,
-    "GolOspite": 4,
-    "Fase": "Eliminazione"
+    "GolOspite": 3,
+    "Data": "2026-01-14T00:00:00"
   }
 ]

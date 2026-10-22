@@ -20,7 +20,7 @@ namespace esUEFA
         {
             string fileName = "ResocontoPartite.json";
 
-            List<CPartitaEliminazione> provvisoria = new List<CPartitaEliminazione>();
+            List<Object> provvisoria = new List<Object>();
 
             if (!File.Exists(fileName))
             {
@@ -30,19 +30,59 @@ namespace esUEFA
 
             string jsonString = File.ReadAllText(fileName);
 
-            provvisoria = JsonSerializer.Deserialize<List<CPartitaEliminazione>>(jsonString);
+            provvisoria = JsonSerializer.Deserialize<List<object>>(jsonString);
 
             partite = new List<CPartita>();
 
             foreach (var partita in provvisoria)
             {
-                partite.Add(partita);
+                if (partita is JsonElement jsonElement)
+                {
+                    if (jsonElement.TryGetProperty("Fase", out JsonElement faseProperty))
+                    {
+                        string fase = faseProperty.GetString();
+                        if (fase == "Girone")
+                        {
+                            CPartitaGirone partitaGirone = jsonElement.Deserialize<CPartitaGirone>();
+                            partite.Add(partitaGirone);
+                        }
+                        else if (fase == "Finale")
+                        {
+                            CPartitaFinale partitaFinale = jsonElement.Deserialize<CPartitaFinale>();
+                            partite.Add(partitaFinale);
+                        }
+                        else if (fase == "Eliminazione")
+                        {
+                            CPartitaEliminazione partitaEliminazione = jsonElement.Deserialize<CPartitaEliminazione>();
+                            partite.Add(partitaEliminazione);
+                        }
+                    }
+                }
             }
         }
 
         public void Salva()
         {
             string fileName = "ResocontoPartite.json";
+
+            List<object> partite = new List<object>();
+
+            foreach (var partita in this.partite)
+            {
+                if (partita is CPartitaGirone)
+                {
+                    partite.Add((CPartitaGirone)partita);
+                }
+                else if (partita is CPartitaFinale)
+                {
+                    partite.Add((CPartitaFinale)partita);
+                }
+                else if (partita is CPartitaEliminazione)
+                {
+                    partite.Add((CPartitaEliminazione)partita);
+                }
+            }
+
             //jsonString += JsonSerializer.Serialize(partite[i], Formatting.Indented);
             string jsonString = JsonSerializer.Serialize(partite, new JsonSerializerOptions { WriteIndented = true });
 

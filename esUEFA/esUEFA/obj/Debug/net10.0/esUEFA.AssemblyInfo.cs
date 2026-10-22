@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("esUEFA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e44b72cd004dbae2938240d4a29a28a987eb0db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39456501e3b94c4add142b7b115be06456063580")]
 [assembly: System.Reflection.AssemblyProductAttribute("esUEFA")]
 [assembly: System.Reflection.AssemblyTitleAttribute("esUEFA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

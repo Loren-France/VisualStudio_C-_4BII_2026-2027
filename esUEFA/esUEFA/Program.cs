@@ -94,7 +94,7 @@
             }
             do
             {
-                Console.WriteLine("Inserisci il criterio di ordinamento (naturale, gol, scarto, casaAZ, casaZA): ");
+                Console.WriteLine("Inserisci il criterio di ordinamento (naturale, gol, scarto, casaAZ, casaZA, data): ");
                 criterio = Console.ReadLine();
             } while (string.IsNullOrWhiteSpace(criterio));
 
@@ -131,9 +131,10 @@
                     Console.WriteLine("Tipo di partita:");
                     Console.WriteLine("1. Girone");
                     Console.WriteLine("2. Eliminazione");
-                    Console.WriteLine("Seleziona un'opzione (1-2): ");
+                    Console.WriteLine("3. Finale");
+                    Console.WriteLine("Seleziona un'opzione (1-3): ");
                 }
-                while (!int.TryParse(Console.ReadLine(), out tipoPartita) || (tipoPartita != 1 && tipoPartita != 2));
+                while (!int.TryParse(Console.ReadLine(), out tipoPartita) || (tipoPartita != 1 && tipoPartita != 2 && tipoPartita != 3));
 
                 int giornata;
 
@@ -142,6 +143,14 @@
                     Console.WriteLine("Inserisci la giornata:");
                 }
                 while (!int.TryParse(Console.ReadLine(), out giornata) || giornata < 1);
+
+                DateTime data;
+
+                do
+                {
+                    Console.WriteLine("Inserisci la data (gg/mm/aaaa):");
+                }
+                while (!DateTime.TryParse(Console.ReadLine(), out data));
 
                 string squadraCasa;
 
@@ -184,10 +193,10 @@
                 {
                     Console.WriteLine("Partita del girone inserita correttamente.");
 
-                    CPartitaGirone girone = new CPartitaGirone(giornata, squadraCasa, squadraOspite, golCasa, golOspite);
+                    CPartitaGirone girone = new CPartitaGirone(giornata, squadraCasa, squadraOspite, golCasa, golOspite, data);
                     ListaPartite.Aggiungi(girone);
                 }
-                else
+                else if (tipoPartita == 2 || tipoPartita == 3)
                 {
                     int? rigoriCasa = null;
                     int? rigoriOspite = null;
@@ -220,8 +229,17 @@
 
                     Console.WriteLine("Partita ad eliminazione inserita correttamente.");
 
-                    CPartitaEliminazione eliminatoria = new CPartitaEliminazione(giornata, squadraCasa, squadraOspite, golCasa, golOspite, rigoriCasa, rigoriOspite);
-                    ListaPartite.Aggiungi(eliminatoria);
+                    if (tipoPartita == 2)
+                    {
+
+                        CPartitaEliminazione eliminatoria = new CPartitaEliminazione(giornata, squadraCasa, squadraOspite, golCasa, golOspite, rigoriCasa, rigoriOspite, data);
+                        ListaPartite.Aggiungi(eliminatoria);
+                    }
+                    else
+                    {
+                        CPartitaFinale finale = new CPartitaFinale(giornata, squadraCasa, squadraOspite, golCasa, golOspite, rigoriCasa, rigoriOspite, data);
+                        ListaPartite.Aggiungi(finale);
+                    }
                 }
             }
             catch (Exception ex)

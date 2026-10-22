@@ -8,8 +8,8 @@ namespace esUEFA
     {
         public override string Fase { get; } = "Girone";
 
-        public CPartitaGirone(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite)
-            : base(giornata, squadraCasa, squadraOspite, golCasa, golOspite)
+        public CPartitaGirone(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite, DateTime? data)
+            : base(giornata, squadraCasa, squadraOspite, golCasa, golOspite, data)
         {}
 
         public override int PuntiPer(string squadra)

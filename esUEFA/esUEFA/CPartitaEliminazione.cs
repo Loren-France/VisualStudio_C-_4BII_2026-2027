@@ -10,8 +10,8 @@ namespace esUEFA
         public int? RigoriCasa { get; set; }
         public int? RigoriOspite { get; set; }
 
-        public CPartitaEliminazione(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite, int? rigoriCasa = null, int? rigoriOspite = null)
-            : base(giornata, squadraCasa, squadraOspite, golCasa, golOspite)
+        public CPartitaEliminazione(int giornata, string squadraCasa, string squadraOspite, int golCasa, int golOspite, int? rigoriCasa = null, int? rigoriOspite = null, DateTime? data = null)
+            : base(giornata, squadraCasa, squadraOspite, golCasa, golOspite, data)
         {
             RigoriCasa = rigoriCasa;
             RigoriOspite = rigoriOspite;
