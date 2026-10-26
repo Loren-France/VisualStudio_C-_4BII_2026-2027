@@ -1,0 +1,467 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        d:DesignWidth="1200"
+        d:DesignHeight="1200"
+        x:Class="TestAvalonia.MainWindow"
+        Title="Raccolta Tag Avalonia">
+
+    <ScrollViewer>
+
+        <StackPanel Margin="20" Spacing="15">
+
+            <!-- ===================================== -->
+            <!-- TITOLO                                -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="RACCOLTA TAG AVALONIA"
+                       FontSize="30"
+                       FontWeight="Bold"/>
+
+            <TextBlock Text="Formulario pratico per verifiche ed esercizi"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- TEXTBLOCK                             -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="TextBlock (simile a Label)"
+                       FontWeight="Bold"/>
+
+            <TextBlock Text="Questo è un TextBlock"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- TEXTBOX                               -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="TextBox"
+                       FontWeight="Bold"/>
+
+            <TextBox Watermark="Inserisci testo"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- BUTTON                                -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Button"
+                       FontWeight="Bold"/>
+
+            <Button Content="Premi"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- CHECKBOX                              -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="CheckBox"
+                       FontWeight="Bold"/>
+
+            <CheckBox Content="Accetto le condizioni"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- RADIOBUTTON                           -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="RadioButton"
+                       FontWeight="Bold"/>
+
+            <RadioButton GroupName="Scelta"
+                         Content="Opzione A"/>
+
+            <RadioButton GroupName="Scelta"
+                         Content="Opzione B"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- COMBOBOX                              -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="ComboBox"
+                       FontWeight="Bold"/>
+
+            <ComboBox SelectedIndex="0">
+
+                <ComboBoxItem>Windows</ComboBoxItem>
+                <ComboBoxItem>Linux</ComboBoxItem>
+                <ComboBoxItem>MacOS</ComboBoxItem>
+
+            </ComboBox>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- LISTBOX                               -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="ListBox"
+                       FontWeight="Bold"/>
+
+            <ListBox Height="80">
+
+                <ListBoxItem>Elemento 1</ListBoxItem>
+                <ListBoxItem>Elemento 2</ListBoxItem>
+                <ListBoxItem>Elemento 3</ListBoxItem>
+
+            </ListBox>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- SLIDER                                -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Slider"
+                       FontWeight="Bold"/>
+
+            <Slider Minimum="0"
+                    Maximum="100"
+                    Value="50"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- PROGRESSBAR                           -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="ProgressBar"
+                       FontWeight="Bold"/>
+
+            <ProgressBar Minimum="0"
+                         Maximum="100"
+                         Value="70"/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- DATEPICKER                            -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="DatePicker"
+                       FontWeight="Bold"/>
+
+            <DatePicker/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- BORDER                                -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Border"
+                       FontWeight="Bold"/>
+
+            <Border BorderBrush="Black"
+                    BorderThickness="2"
+                    Padding="10">
+
+                <TextBlock Text="Contenuto racchiuso da Border"/>
+
+            </Border>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- WRAPPANEL                             -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="WrapPanel"
+                       FontWeight="Bold"/>
+
+            <WrapPanel>
+
+                <Button Content="A"/>
+                <Button Content="B"/>
+                <Button Content="C"/>
+                <Button Content="D"/>
+                <Button Content="E"/>
+                <Button Content="F"/>
+
+            </WrapPanel>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- STACKPANEL                            -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="StackPanel"
+                       FontWeight="Bold"/>
+
+            <Border BorderBrush="Gray"
+                    BorderThickness="1"
+                    Padding="10">
+
+                <StackPanel>
+
+                    <Button Content="Primo"/>
+                    <Button Content="Secondo"/>
+                    <Button Content="Terzo"/>
+
+                </StackPanel>
+
+            </Border>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- GRID                                  -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Grid 2x2"
+                       FontWeight="Bold"/>
+
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto">
+
+                <Button Grid.Row="0"
+                        Grid.Column="0"
+                        Content="R0 C0"/>
+
+                <Button Grid.Row="0"
+                        Grid.Column="1"
+                        Content="R0 C1"/>
+
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Content="R1 C0"/>
+
+                <Button Grid.Row="1"
+                        Grid.Column="1"
+                        Content="R1 C1"/>
+
+            </Grid>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- GRID CON SPAN                         -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Grid con ColumnSpan"
+                       FontWeight="Bold"/>
+
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto">
+
+                <Button Grid.ColumnSpan="2"
+                        Content="Occupo due colonne"/>
+
+                <Button Grid.Row="1"
+                        Grid.Column="0"
+                        Content="Sinistra"/>
+
+                <Button Grid.Row="1"
+                        Grid.Column="1"
+                        Content="Destra"/>
+
+            </Grid>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- MARGIN E PADDING                      -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Margin e Padding"
+                       FontWeight="Bold"/>
+
+            <Border BorderBrush="DarkBlue"
+                    BorderThickness="2"
+                    Margin="20"
+                    Padding="20">
+
+                <TextBlock Text="Padding interno - Margin esterno"/>
+
+            </Border>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- PROPRIETA' COMUNI                     -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Proprietà comuni"
+                       FontSize="20"
+                       FontWeight="Bold"/>
+
+            <TextBlock Text='Width="200"'/>
+            <TextBlock Text='Height="100"'/>
+            <TextBlock Text='Margin="10"'/>
+            <TextBlock Text='Padding="10"'/>
+            <TextBlock Text='Background="LightBlue"'/>
+            <TextBlock Text='FontSize="20"'/>
+            <TextBlock Text='FontWeight="Bold"'/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- MINI RICETTE                          -->
+            <!-- ===================================== -->
+
+            <TextBlock Text="Alcune accortezze"
+                       FontSize="22"
+                       FontWeight="Bold"/>
+
+            <TextBlock Text='Click="BtnSalva_Click"'/>
+            <!--TextBlock Text='{Binding Nome}'/>
+            <TextBlock Text='{Binding Nome, Mode=TwoWay}'/-->
+            <TextBlock Text='Command="{Binding SalvaCommand}"'/>
+            <TextBlock Text='Grid.Row="1"'/>
+            <TextBlock Text='Grid.Column="1"'/>
+            <TextBlock Text='Grid.ColumnSpan="2"'/>
+
+            <Separator/>
+
+            <!-- ===================================== -->
+            <!-- ESEMPI TEORICI                        -->
+            <!-- ===================================== -->
+
+            <!--
+
+            ===========================================
+            EVENTO BUTTON CLASSICO
+            ===========================================
+
+            AXAML
+
+            <Button Content="Salva"
+                    Click="BtnSalva_Click"/>
+
+            C#
+
+            private void BtnSalva_Click(
+                object? sender,
+                RoutedEventArgs e)
+            {
+
+            }
+
+            -->
+
+            <!--
+
+            ===========================================
+            BINDING
+            ===========================================
+
+            AXAML
+
+            <TextBox Text="{Binding Nome}"/>
+
+            ViewModel
+
+            public class MainWindowViewModel
+            {
+                public string Nome { get; set; }
+                    = "Mario";
+            }
+
+            -->
+
+            <!--
+
+            ===========================================
+            DATACONTEXT
+            ===========================================
+
+            public MainWindow()
+            {
+                InitializeComponent();
+
+                DataContext =
+                    new MainWindowViewModel();
+            }
+
+            -->
+
+            <!--
+
+            ===========================================
+            COMPILED BINDING
+            ===========================================
+
+            xmlns:vm="using:TestAvalonia"
+
+            x:DataType="vm:MainWindowViewModel"
+
+            -->
+
+            <!--
+
+            ===========================================
+            COMMAND (MVVM)
+            ===========================================
+
+            AXAML
+
+            <Button Content="Salva"
+                    Command="{Binding SalvaCommand}"/>
+
+            ViewModel
+
+            [RelayCommand]
+            private void Salva()
+            {
+
+            }
+
+            -->
+
+            <!--
+
+            ===========================================
+            DATAGRID
+            ===========================================
+
+            Pacchetto necessario:
+
+            Avalonia.Controls.DataGrid
+
+            Esempio:
+
+            <DataGrid
+                ItemsSource="{Binding Persone}"
+                AutoGenerateColumns="True"/>
+
+            -->
+
+            <!--
+
+            ===========================================
+            MVVM
+            ===========================================
+
+            VIEW
+               |
+               v
+
+            DataContext
+
+               |
+               v
+
+            ViewModel
+
+               |
+               v
+
+            Property / Command
+
+            -->
+
+        </StackPanel>
+
+    </ScrollViewer>
+
+</Window>
