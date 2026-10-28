@@ -1,0 +1,40 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:collections="using:System.Collections"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="esFormeGeometriche.MainWindow"
+        Title="esFormeGeometriche">
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="15">
+            <TextBlock Text="Programma calcolatore di aree e perimetri" FontSize="30" FontWeight="Bold"></TextBlock>
+            <TextBlock Text="Selezionare una forma geometrica: "></TextBlock>
+            <ComboBox Name="CmbSelezione" PlaceholderText="--Selezionare una forma geometrica--" SelectionChanged="CmbSelezione_SelectionChanged">
+                <ComboBoxItem>Rettangolo</ComboBoxItem>
+                <ComboBoxItem>Quadrato</ComboBoxItem>
+                <ComboBoxItem>Cerchio</ComboBoxItem>
+            </ComboBox>
+            <Separator></Separator>
+            <TextBlock Text="Inserire i dati della forma geometrica: "></TextBlock>
+                <StackPanel IsVisible="False" Name="PanelRettangolo" Spacing="10">
+                    <TextBlock Text="Base: "></TextBlock>
+                    <TextBox Name="TxtBase" Width="200" HorizontalAlignment="Left"></TextBox>
+                    <TextBlock Text="Altezza: "></TextBlock>
+                    <TextBox Name="TxtAltezza" Width="200" HorizontalAlignment="Left"></TextBox>
+                </StackPanel>
+                <StackPanel IsVisible="False" Name="PanelQuadrato">
+                    <TextBlock Text="Lato: "></TextBlock>
+                    <TextBox Name="TxtLato" Width="200" HorizontalAlignment="Left"></TextBox>
+                </StackPanel>
+                <StackPanel IsVisible="False" Name="PanelCerchio">
+                    <TextBlock Text="Raggio: "></TextBlock>
+                    <TextBox Name="TxtRaggio" Width="200" HorizontalAlignment="Left"></TextBox>
+                </StackPanel>
+            <Separator></Separator>
+            <Button Name="BtnCalcola" Content="Calcola" Click="BtnCalcola_Click"></Button>
+            <Separator></Separator>
+            <TextBlock Name="TbkRisultato" FontSize="16" FontWeight="Bold"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="1200"
+        x:Class="PrimoProgettoAvalonia.MainWindow"
+        Title="PrimoProgettoAvalonia">
+       
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="15">
+            <TextBlock Text="Testo interno" FontSize="30" FontWeight="Bold" FontFeatures=""/>
+            <TextBlock Text="Nuovo testo di default"/>
+            <Grid ColumnDefinitions="*, Auto">
+                <TextBox Grid.Column="0"
+                         Text="Cit"
+                           PlaceholderText="Inserisci il testo qui"/>
+                <Button Grid.Column="1" Content="Aggiungi" Margin="10,0,0,0"/>
+            </Grid>
+        </StackPanel>
+    
+    </ScrollViewer>        
+</Window>
