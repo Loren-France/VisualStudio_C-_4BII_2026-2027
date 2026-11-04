@@ -1,0 +1,49 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="550"
+        x:Class="esAutonoleggio.MainWindow"
+        Title="Autonoleggio">
+        <ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="Benvenuto all'autonoleggio!" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <Grid ColumnDefinitions="1*, 1*" Margin="10" ColumnSpacing="30">
+                <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="3" Background="#AAF2FF"/>
+                <StackPanel Grid.Column="0" Grid.Row="0" Spacing="10" Background="">
+                    <TextBlock Text="Inserimento nuovo veicolo :" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Padding="10"/>
+                    <TextBlock Text="Scegliere il tipo di veicolo: "  HorizontalAlignment="Center"/>
+                    <ComboBox Width="200" HorizontalAlignment="Center" Name="cmbTipo" SelectionChanged="cmbTipo_SelectionChanged">
+                        <ComboBoxItem Content="Auto"/>
+                        <ComboBoxItem Content="Moto"/>
+                        <ComboBoxItem Content="Furgone"/>
+                        <ComboBoxItem Content="Auto Elettrica"/>
+                    </ComboBox>
+                    <TextBlock Text="Inserire la targa del veicolo:" HorizontalAlignment="Center"/>
+                    <TextBox Name="txtTarga" Width="200" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Inserire il modello del veicolo:" HorizontalAlignment="Center"/>
+                    <TextBox Name="txtModello" Width="200" HorizontalAlignment="Center"/>
+                    <StackPanel Name="Electric" IsVisible="False" Spacing="10">
+                        <TextBlock Text="Inserire l'autonomia in km dell'auto elettrica:" HorizontalAlignment="Center"/>
+                        <TextBox Name="txtAutonomia" Width="200" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                    <Button Name="btnNuovo" Click="btnNuovo_Click" Content="Aggiungi alla flotta" HorizontalAlignment="Center" Background="#2563EB" Foreground="White" />
+                    <TextBlock Name="txtError" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" Padding="5"/>
+                </StackPanel>
+                <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="3" Background="AntiqueWhite"/>
+                <StackPanel Grid.Column="1" Grid.Row="0" Spacing="10">
+                    <TextBlock Text="Lista dei veicoli disponibili :" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Padding="10"/>
+                    <ListBox Name="lstVeicoli" Width="500" Height="200" HorizontalAlignment="Center" SelectionChanged="lstVeicoli_SelectionChanged"/>
+                    <TextBlock Text="Inserire il numero di giorni di noleggio:" HorizontalAlignment="Center"/>
+                    <NumericUpDown Name="nupGiorni" Width="150" HorizontalAlignment="Center" Minimum="1" Maximum="60" Value="1" Increment="1"/>
+                    <CheckBox Name="ckbAssicurazione" Content="Assicurazione completa (+15 €/giorno)" HorizontalAlignment="Center"/>
+                    <Grid ColumnDefinitions="1*, 1*">
+                        <Button Grid.Column="0" Name="btnPreventivo" Click="btnPreventivo_Click" Content="Calcola preventivo" HorizontalAlignment="Center" Background="DeepPink" Foreground="White" IsEnabled="False"/>
+                        <Button Grid.Column="1" Name="btnRimuovi" Click="btnRimuovi_Click" Content="Rimuovi" HorizontalAlignment="Center" Background="Red" Foreground="White" IsEnabled="False"/>
+                    </Grid>
+                    <TextBlock Name="txtPreventivo" Foreground="Red" FontWeight="Bold" HorizontalAlignment="Center" Padding="5"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+        </ScrollViewer>
+</Window>

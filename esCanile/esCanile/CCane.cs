@@ -161,7 +161,7 @@ namespace esCanile
     internal class CCane
     {
         public string? Nome { get; set; }
-        public int Eta { get; set; }
+        public int AnnoNascita { get; set; }
         public Razza Razza { get; set; }
         public DateTime Data { get; set; }
         public bool Stato { get; set; }
@@ -172,7 +172,7 @@ namespace esCanile
 
         public override string ToString()
         {
-            return $"Nome: {Nome}, Età: {Eta}, Razza: {Razza}, Data di arrivo: {Data.ToShortDateString()}, Stato di salute: {(Stato ? "In salute" : "Malato")}, Descrizione: {Descrizione}";
+            return $"Nome: {Nome}, Anno di nascita: {AnnoNascita}, Razza: {Razza}, Data di arrivo: {Data.ToShortDateString()}, Stato di salute: {(Stato ? "In salute" : "Malato")}, Descrizione: {Descrizione}";
         }
     }
 }

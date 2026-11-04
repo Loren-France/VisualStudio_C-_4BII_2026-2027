@@ -38,13 +38,13 @@ public partial class MainWindow : Window
 
         aggiungere.Nome = txtNome.Text;
 
-        if (!int.TryParse(txtEtà.Text, out int age) || age < 0)
+        if (!int.TryParse(txtAnnoNascita.Text, out int age) || DateTime.Today.Year - age < 0)
         {
             txtMessage.Text = "Errore: l'età deve essere un numero intero positivo.";
             return;
         }
 
-        aggiungere.Eta = age;
+        aggiungere.AnnoNascita = age;
 
         if (cmbRazza.SelectedItem == null)
         {

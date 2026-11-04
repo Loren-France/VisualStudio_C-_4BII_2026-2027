@@ -14,11 +14,11 @@
                 <StackPanel Spacing="10">
                     <TextBlock Text="Nome:"></TextBlock>
                     <TextBox Name="txtNome"></TextBox>
-                    <TextBlock Text="Età:"></TextBlock>
-                    <TextBox Name="txtEtà"></TextBox>
+                    <TextBlock Text="Anno nascita:"></TextBlock>
+                    <TextBox Name="txtAnnoNascita"></TextBox>
                     <TextBlock Text="Razza:"></TextBlock>
                     <ComboBox Name="cmbRazza" PlaceholderText="--Seleziona una razza--" Width="260"></ComboBox>
-                    <TextBlock Text="Data:"></TextBlock>
+                    <TextBlock Text="Data entrata:"></TextBlock>
                     <CalendarDatePicker Name="calData" PlaceholderText="--Seleziona una data--" Width="260"></CalendarDatePicker>
                     <TextBlock Text="Stato:"></TextBlock>
                     <RadioButton Name="In_salute" Content="In salute"></RadioButton>
