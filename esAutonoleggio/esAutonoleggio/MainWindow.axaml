@@ -33,6 +33,7 @@
                 <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="3" Background="AntiqueWhite"/>
                 <StackPanel Grid.Column="1" Grid.Row="0" Spacing="10">
                     <TextBlock Text="Lista dei veicoli disponibili :" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Padding="10"/>
+                    <Label Name="lblVeicoli" Content="Veicoli disponibili" HorizontalAlignment="Center"/>
                     <ListBox Name="lstVeicoli" Width="500" Height="200" HorizontalAlignment="Center" SelectionChanged="lstVeicoli_SelectionChanged"/>
                     <TextBlock Text="Inserire il numero di giorni di noleggio:" HorizontalAlignment="Center"/>
                     <NumericUpDown Name="nupGiorni" Width="150" HorizontalAlignment="Center" Minimum="1" Maximum="60" Value="1" Increment="1"/>

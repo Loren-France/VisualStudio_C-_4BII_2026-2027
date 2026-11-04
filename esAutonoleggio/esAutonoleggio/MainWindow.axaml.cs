@@ -9,6 +9,7 @@ namespace esAutonoleggio;
 public partial class MainWindow : Window
 {
     static List<CVeicolo> Flotta = new List<CVeicolo>();
+    static int veicoliElettrici = 0;
     public MainWindow()
     {
         InitializeComponent();
@@ -22,8 +23,10 @@ public partial class MainWindow : Window
         Flotta.Add(MotoDiProva2);
         Flotta.Add(FurgoneDiProva);
         Flotta.Add(AutoElettricaDiProva);
+        veicoliElettrici++;
         lstVeicoli.ItemsSource = null;
         lstVeicoli.ItemsSource = Flotta;
+        lblVeicoli.Content = $"Veicoli disponibili: {Flotta.Count} - Auto elettriche: {veicoliElettrici}";
     }
 
     private void cmbTipo_SelectionChanged(object? sender, SelectionChangedEventArgs e)
@@ -88,6 +91,7 @@ public partial class MainWindow : Window
                         return;
                     }
                     nuovoVeicolo = new CAutoElettrica(targa, modello, autonomiaKm);
+                    veicoliElettrici++;
                     break;
                 default:
                     txtError.Text = "Tipo di veicolo non valido.";
@@ -104,6 +108,7 @@ public partial class MainWindow : Window
             }
 
             Flotta.Add(nuovoVeicolo);
+            lblVeicoli.Content = $"Veicoli disponibili: {Flotta.Count} - Auto elettriche: {veicoliElettrici}";
             txtError.Text = "Veicolo aggiunto con successo!";
             lstVeicoli.ItemsSource = null;
             lstVeicoli.ItemsSource = Flotta;
@@ -154,7 +159,13 @@ public partial class MainWindow : Window
             lstVeicoli.ItemsSource = null;
             lstVeicoli.ItemsSource = Flotta;
 
+            if (veicoloSelezionato is CAutoElettrica)
+            {
+                veicoliElettrici--;
+            }
+
             txtPreventivo.Text = "Veicolo rimosso con successo.";
+            lblVeicoli.Content = $"Veicoli disponibili: {Flotta.Count} - Auto elettriche: {veicoliElettrici}";
             btnPreventivo.IsEnabled = false;
             btnRimuovi.IsEnabled = false;
         }
