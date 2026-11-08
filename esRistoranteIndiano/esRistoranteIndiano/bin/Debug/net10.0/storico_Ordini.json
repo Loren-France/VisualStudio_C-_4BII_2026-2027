@@ -1,0 +1,20 @@
+[
+  {
+    "PiattiOrdinati": [
+      {
+        "Nome": "Pakora",
+        "Categoria": 0,
+        "Prezzo": 4
+      },
+      {
+        "Nome": "Chicken Curry",
+        "Categoria": 1,
+        "Prezzo": 12
+      }
+    ],
+    "Quantit\u00E0Piatti": [ 2, 2 ],
+    "NumeroTavoloAssociato": 1,
+    "DataOraOrdine": "2026-11-08T23:06:09.5537934+01:00",
+    "TotaleOrdine": 32
+  }
+]
