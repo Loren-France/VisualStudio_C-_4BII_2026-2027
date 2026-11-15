@@ -1,0 +1,52 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:collections="using:System.Collections"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:system="using:System"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Biblioteca_Fraceschetto.MainWindow"
+        Title="Biblioteca_Fraceschetto"
+        MinWidth="1400">
+    <ScrollViewer>
+        <StackPanel Margin="10">
+            <TextBlock Text="Biblioteca di quartiere" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center"/>
+                <StackPanel Margin="10">
+                <TextBlock Text="Lista materiali in biblioteca: " />
+                <ListBox Name="lstMateriali" SelectionChanged="lstMateriali_SelectionChanged" MinWidth="1300" ItemsSource="CGestioneBiblioteca.Materiali"></ListBox>
+                </StackPanel>
+            <Border Background="DarkGray" Margin="10">
+                <StackPanel>
+                    <TextBlock Name="txtInfoMateriale" Text="Materiale selezionato: " Margin="20"></TextBlock>
+                    <Label Content="Inserisci il nome utente per il prestito: " Margin="5"></Label>
+                    <TextBox Name="txtUtente" PlaceholderText="-- Inserisci il nome utente --" Margin="5"></TextBox>
+                    <Label Content="Inserisci la data prevista di restituzione: " Margin="5"></Label>
+                    <CalendarDatePicker Name="cdtDate" Margin="5"></CalendarDatePicker>
+                    <Button Name="btnPrestito" Content="Prendi in prestito materiale" Click="btnPrestito_Click" Margin="20"></Button>
+                    <Button Name="btnRestituisci" Content="Restituisci materiale" Click="btnRestituisci_Click" Margin="20"></Button>
+                    <TextBlock Name="txtPenale" Text="Costo penale:" Margin="20"/>
+                </StackPanel>
+            </Border>
+            <Border Background="DarkGray" Margin="10">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Aggiungi nuovo materiale: " FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Margin="10"></TextBlock>
+                    <TextBlock Text="Seleziona il tipo di materiale: "/>
+                    <ComboBox Name="cmbTipiMateriale" PlaceholderText="--Seleziona il tipo di materiale--" Margin="5"></ComboBox>
+                    <TextBlock Text="Inserire codice: "></TextBlock>
+                    <NumericUpDown Name="numCodice" Value="1" Minimum="1" Margin="5"></NumericUpDown>
+                    <TextBlock Text="Inserire il titolo: "></TextBlock>
+                    <TextBox Name="txtTitolo" Margin="5"></TextBox>
+                    <TextBlock Text="Inserire l'anno di pubblicazione: "></TextBlock>
+                    <NumericUpDown Name="numAnno" Value="2026" Minimum="1" Margin="5"></NumericUpDown>
+                    <TextBlock Text="Inserire l'autore (libro o audiolibro): "></TextBlock>
+                    <TextBox Name="txtAutore" Margin="5"></TextBox>
+                    <TextBlock Text="Inserire la durata in minuti (audiolibro): "></TextBlock>
+                    <NumericUpDown Name="numDurata" Value="1" Minimum="1" Margin="5"></NumericUpDown>
+                    <TextBlock Text="Inserire il numero di uscita (rivista): "></TextBlock>
+                    <NumericUpDown Name="numNumeroUscita" Value="1" Minimum="1" Margin="5"></NumericUpDown>
+                    <Button Name="btnAggiungi" Content="Aggiungi materiale" Click="btnAggiungi_Click" Margin="20"></Button>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
