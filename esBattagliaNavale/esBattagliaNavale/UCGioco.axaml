@@ -1,0 +1,19 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="esBattagliaNavale.UCGioco">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock Name="txtIstruzioni" Text="Gioca: " FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="5"/>
+            <UniformGrid Name="ugCampo" HorizontalAlignment="Center"/>
+            <Grid ColumnDefinitions="*, *, *">
+                    <TextBlock Grid.Column="0" Name="txtDati" Text="Dati della cella" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="20"/>
+                    <TextBlock Grid.Column="1" Name="txtMosse" Text="Numero mosse" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="20"/>
+                    <TextBlock Grid.Column="2" Name="txtNavi" Text="Navi rimaste" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="20"/>
+            </Grid>
+            <ListBox Name="lstLog" Height="200" Margin="10"/>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

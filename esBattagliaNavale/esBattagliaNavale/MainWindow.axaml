@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:collections="using:System.Collections"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="esBattagliaNavale.MainWindow"
+        Title="esBattagliaNavale"
+        RequestedThemeVariant="Light">
+
+        <ScrollViewer>
+            <StackPanel>
+                <TextBlock Text="Battaglia Navale" FontSize="24" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,10"/>
+                <TextBlock Name="txtMode" Text="Modalità attuale" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,10"/>
+
+                <Grid Name="ugControl" ColumnDefinitions="*, *" Margin="10">
+                    <Button Grid.Column="0" Name="btnInizia" Content="Inizia Partita" Width="150" Height="40" Click="btnInizia_Click" HorizontalAlignment="Center"/>
+                    <Button Grid.Column="1" Name="btnEsci" Content="Esci" Width="150" Height="40" Click="btnEsci_Click" HorizontalAlignment="Center"/>
+                </Grid>
+                <ContentControl Name="Principale"/>
+            </StackPanel>
+        </ScrollViewer>
+</Window>
