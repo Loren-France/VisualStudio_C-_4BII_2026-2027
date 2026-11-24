@@ -1,0 +1,17 @@
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.exe
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.deps.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.runtimeconfig.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.runtimeconfig.dev.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\bin\Debug\net10.0\esPedineConsole.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.AssemblyInfoInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.AssemblyInfo.cs
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.csproj.CoreCompileInputs.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.sourcelink.json
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\refint\esPedineConsole.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.pdb
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedineConsole.genruntimeconfig.cache
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\ref\esPedineConsole.dll
+C:\Users\Loren\OneDrive\Documenti\Informatica\VisualStudio4BII_2026-2027\esPedineConsole\esPedineConsole\obj\Debug\net10.0\esPedine.7989C6B0.Up2Date
