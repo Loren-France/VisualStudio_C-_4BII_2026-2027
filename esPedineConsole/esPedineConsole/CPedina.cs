@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using esPedineConsole;
 
 namespace esReGuardiePedoni
 {
@@ -8,10 +9,32 @@ namespace esReGuardiePedoni
     {
         public string Nome { get; set; }
 
-        public CPedina()
+        public event EventHandler<string>? Messaggio;
+
+        public CPedina(string nome)
         {
+            this.Nome = nome;
         }
 
-        public abstract string Azione();
+        protected void Comunica(string frase)
+        {
+            Messaggio?.Invoke(this, frase);
+        }
+
+        public abstract void Azione(object? sender, EventArgs e);
+
+        public virtual void OnCatturaPedina(object? sender, string nome)
+        {
+            if (this.Nome != nome)
+            {
+                return;
+            }
+
+            if (sender is CGestione gestore)
+            {
+                gestore.AttaccaRe -= Azione;
+                gestore.Cattura -= OnCatturaPedina;
+            }
+        }
     }
 }

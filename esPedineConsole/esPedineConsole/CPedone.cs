@@ -7,25 +7,26 @@ namespace esReGuardiePedoni
 {
     internal class CPedone : CPedina, ICatturabile
     {
-        public CPedone() : base()
+        public CPedone(string nome) : base(nome)
         {
+            this.Nome = nome;
         }
 
-        public override string Azione()
+        public override void Azione(object? sender, EventArgs e)
         {
             string FileName = "output.txt";
-            string message = $"Il Pedone {this.Nome} si sta preparando.";
+            string message = $"Il Pedone {this.Nome} si sta preparando.\n";
 
             File.AppendAllText(FileName, message);
 
-            return message;
+            base.Comunica(message);
         }
 
         public void Cattura()
         {
             string FileName = "output.txt";
-            string message = $"Il Pedone {this.Nome} è stato catturato.";
-            File.WriteAllText(FileName, message);
+            string message = $"Il Pedone {this.Nome} è stato catturato.\n";
+            File.AppendAllText(FileName, message);
         }
     }
 }

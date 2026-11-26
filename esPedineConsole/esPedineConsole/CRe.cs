@@ -7,19 +7,23 @@ namespace esReGuardiePedoni
 {
     internal class CRe : CPedina
     {
-        public CRe() : base()
+        public CRe(string nome) : base(nome)
         {
 
         }
 
-        public override string Azione()
+        public override void OnCatturaPedina(object? sender, string nome)
+        {
+        }
+
+        public override void Azione(object? sender, EventArgs e)
         {
             string FileName = "output.txt";
-            string message = $"Il Re {this.Nome} è sotto attacco.";
+            string message = $"Il Re {this.Nome} è sotto attacco.\n";
 
             File.AppendAllText(FileName, message);
 
-            return message;
+            base.Comunica(message);
         }
     }
 }

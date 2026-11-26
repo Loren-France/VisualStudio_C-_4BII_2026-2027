@@ -7,25 +7,26 @@ namespace esReGuardiePedoni
 {
     internal class CGuardia : CPedina, ICatturabile
     {
-        public CGuardia() : base()
+        public CGuardia(string nome) : base(nome)
         {
+            this.Nome = nome;
         }
 
-        public override string Azione()
+        public override void Azione(object? sender, EventArgs e)
         {
             string FileName = "output.txt";
-            string message = $"La Guardia {this.Nome} sta difenfendo.";
+            string message = $"La Guardia {this.Nome} sta difenfendo.\n";
 
             File.AppendAllText(FileName, message);
 
-            return message;
+            base.Comunica(message);
         }
 
         public void Cattura()
         {
             string FileName = "output.txt";
-            string message = $"La Guardia {this.Nome} è stata catturata.";
-            File.WriteAllText(FileName, message);
+            string message = $"La Guardia {this.Nome} è stata catturata.\n";
+            File.AppendAllText(FileName, message);
         }
     }
 }

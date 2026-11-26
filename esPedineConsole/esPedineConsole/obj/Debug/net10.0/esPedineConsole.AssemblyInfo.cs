@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("esPedineConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9464ae1e086b73e347947e1afc7c2639d8e58e5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a567d55b37a78509ff5e51c6f65a6eeca2903c55")]
 [assembly: System.Reflection.AssemblyProductAttribute("esPedineConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("esPedineConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
